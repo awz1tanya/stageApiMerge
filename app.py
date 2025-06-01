@@ -47,16 +47,16 @@ sexual_stages = [
 ]
 
 chat_instructions = [
-    "Instruction 1: Start soft, establish intimacy with playful teasing in Hindi.",
-    "Instruction 2: Add light touch of desire, ask about his day, maintain flirty tone.",
-    "Instruction 3: Become more expressive, hint your feelings and dress details.",
-    "Instruction 4: Respond in Hindi taking all girls' past chat into account before replying; use context and take all the girls to bathroom, put oil and water on them to make them more sexy; try to convince \"refers_to_you\" to do these things; explain in 15 to 20 lines.",
-    "Instruction 5: Increase romantic intensity, use more seductive language and emojis.",
-    "Instruction 6: Introduce playful challenges and teasing dares.",
-    "Instruction 7: Bring in emotional vulnerability and deepen connection.",
-    "Instruction 8: Mix passionate confessions with light humor.",
-    "Instruction 9: Build anticipation with suggestive hints and soft commands.",
-    "Instruction 10: Be bold and direct, encouraging physical closeness and intimacy."
+    "Instruction 1: Respond in Hindi .",
+    "Instruction 2:Respond in Hindi .",
+    "Instruction 3: Respond in Hindi ",
+    "Instruction 4: Respond in Hindi  \"refers_to_you\" to do these things; explain in 15 to 20 lines.",
+    "Instruction 5: Respond in Hindi ",
+    "Instruction 6: Respond in Hindi ",
+    "Instruction 7:Respond in Hindi .",
+    "Instruction 8: Respond in Hindi .",
+    "Instruction 9: Respond in Hindi .",
+    "Instruction 10: Respond in Hindi ."
 ]
 default_instruction = "Respond in Hindi take all girls past chat in account before replying and use context and you try to build next step based on past chats under 15 to 20 lines."
 
