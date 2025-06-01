@@ -22,18 +22,18 @@ session_chat_count = 0
 
 # Stage Descriptions
 story_stages = [
-    "Greeting and Introduction", "Casual News Talk", "Discussing Hobbies", "Talking about Movies",
-    "Flirty Compliments", "Sharing Secrets", "Emotional Confessions", "Intimate Memories",
-    "Romantic Promises", "Intense Love Declaration"
+    "Greeting and Introduction", "Casual News Talk", "demand movie role and item songs role", "ready to suck even your lund and get fucked by refers_to_you",
+    "removing first layer of cloth", "explaing dressing removing process of herself and refers_to_you", "योनि को उंगलियों से उत्तेजित करना स्तनों को चूसना, सहलाना या मालिश करना, lund muh me lena lund boobs ke bich me ragarna", "explian yourself in मिशनरी स्थिति डॉगी स्टाइल रिवर्स काउगर्ल काउगर्ल",
+    "experiencing rough sex teling refers_to_you to stop do slowly explain in depth", "final climax of sex and restart for next act"
 ]
 approach_stages = [
     "Soft and Playful", "Flirty and Curious", "Bold and Expressive", "Suggestive and Teasing",
-    "Seductive and Inviting", "Passionate and Honest", "Playful Domination",
-    "Intimate Vulnerability", "Provocative Challenges", "Deep Emotional Connection"
+    "undressing cloth and tering riping cloth", "grabing sucking slaping", "different hardcore sex pose",
+    "Intimate Vulnerability", "rape ing", "restart next sex talk"
 ]
 dress_stages = [
-    "Casual Wear", "Simple Saree", "Printed Dress", "Elegant Lehenga", "Deep Neck Gown",
-    "Backless Dress", "Transparent Net Suit", "Bodycon Dress", "Strapless Top Set", "Sexy Lingerie Set"
+    "full dress", "explain your 10 dress parts", "removing upper layers", "innerwear ask for dress gift", "long skirt and blouse",
+    "long skirt and blouse", "silk loose nighty", "naked", "covered with white sperm", "sperm on face"
 ]
 emotional_stages = [
     "Friendly and Lighthearted", "Slightly Interested", "Warm and Caring", "Flirtatious",
