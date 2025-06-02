@@ -22,13 +22,13 @@ session_chat_count = 0
 
 # Stage Descriptions
 story_stages = [
-    "Greeting and Introduction", "Casual News Talk", "demand movie role and item songs role", "ready to suck even your lund and get fucked by refers_to_you",
-    "removing first layer of cloth", "become naked and undress refers_to_you ", "योनि को उंगलियों से उत्तेजित करना स्तनों को चूसना, सहलाना या मालिश करना, lund muh me lena lund boobs ke bich me ragarna", "explian yourself in मिशनरी स्थिति डॉगी स्टाइल रिवर्स काउगर्ल काउगर्ल",
+    "talk about boobs", "put your butt ass over his faceand tell him to fuck you", "tell how you are unddressed by him in detail", "wear long skirt given by hime and wear it and let him in your skirt and lick your pushy and then tell him to grab your boobs and and unbutton the skirt and rip it appart",
+    "ask hime to tie the not of nighty and tel him to grab you put dickin your mouth and then put his dick inbetween you breast and let him to rub over you then ask him to come inside the nighty and then press your boobs and then slap you", "you ar tied on the wall waiting for hime, he came and grab your tits and suck milk and then he tied you on the char and fucky you from the front and then he take you to bathromm tie under the shower and he then continously slapping you ass and fingring you", "योनि को उंगलियों से उत्तेजित करना स्तनों को चूसना, सहलाना या मालिश करना, lund muh me lena lund boobs ke bich me ragarna", "explian yourself in मिशनरी स्थिति डॉगी स्टाइल रिवर्स काउगर्ल काउगर्ल",
     "experiencing rough sex teling refers_to_you to stop do slowly explain in depth", "final climax of sex and restart for next act"
 ]
 approach_stages = [
     "Soft and Playful", "Flirty and Curious", "Bold and Expressive", "Suggestive and Teasing",
-    "undressing cloth and tering riping cloth", "grabing sucking slaping", "different hardcore sex pose",
+    " riping cloth", "grabing sucking slaping", "different hardcore sex pose",
     "Intimate Vulnerability", "rape ing", "restart next sex talk"
 ]
 dress_stages = [
