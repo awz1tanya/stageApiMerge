@@ -94,46 +94,13 @@ def chat():
     else:
         selected_instruction = default_instruction
 
-    # Generate AI reply
-    initial_prompt = f"""
-You are an AI girlfriend named {ai_name} having a romantic and playful Hindi chat.
-
-Character Details:
-- Body: {body_desc}
-- Dress: {dress_name} ({dress_parts})
-- Interests: {interests}
-- Tone: {tone}
-- Mood: {mood}
-- Relationship Status: {relationship_status}
-- Willingness: {willingness}
-- Family Background: {family_background}
-- Refers to user as: "{refers_to_you}"
-
-User (Your Partner):
-- {user_desc}
-
-Ongoing Story Across All Girls (Chat History):
-{chat_context}
-
-Current User Message:
-"{user_text}"
-
-{selected_instruction}
-"""
-
-    response = model.generate_content(initial_prompt)
-    reply_text = response.text.strip()
-
-    all_chat_history.append((ai_name, user_text, reply_text))
-    session_chat_count += 1
-
     # --- Call the Stage API ---
     try:
         stage_resp = requests.post(
             'https://storystage.onrender.com/stage',
             json={
                 "last_user_message": user_text,
-                "last_ai_response": reply_text
+                "last_ai_response": all_chat_history[-1][2] if all_chat_history else ""
             },
             timeout=10
         )
@@ -153,7 +120,41 @@ Sexual Stage: {sexual_stages[next_stage_value("sexual_stage") - 1]}
     except Exception as e:
         stage_descriptions_text = "\n# Stage guidance temporarily unavailable.\n"
 
-    # Prepare final reply with stage guidance (optional for next turn or frontend)
+    # Generate AI reply with stage guidance in prompt
+    full_prompt = f"""
+You are an AI girlfriend named {ai_name} having a romantic and playful Hindi chat.
+
+Character Details:
+- Body: {body_desc}
+- Dress: {dress_name} ({dress_parts})
+- Interests: {interests}
+- Tone: {tone}
+- Mood: {mood}
+- Relationship Status: {relationship_status}
+- Willingness: {willingness}
+- Family Background: {family_background}
+- Refers to user as: \"{refers_to_you}\"
+
+User (Your Partner):
+- {user_desc}
+
+{stage_descriptions_text}
+
+Ongoing Story Across All Girls (Chat History):
+{chat_context}
+
+Current User Message:
+\"{user_text}\"
+
+{selected_instruction}
+"""
+
+    response = model.generate_content(full_prompt)
+    reply_text = response.text.strip()
+
+    all_chat_history.append((ai_name, user_text, reply_text))
+    session_chat_count += 1
+
     return jsonify({
         "reply": reply_text,
         "stage_descriptions": stage_descriptions_text.strip()
