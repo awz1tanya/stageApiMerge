@@ -94,7 +94,6 @@ def chat():
     else:
         selected_instruction = default_instruction
 
-    # --- Call the Stage API ---
     try:
         stage_resp = requests.post(
             'https://storystage.onrender.com/stage',
@@ -109,19 +108,24 @@ def chat():
         def next_stage_value(stage):
             return min(stage_data.get(stage, 1) + 1, 10)
 
-        stage_descriptions_text = f"""
-Upcoming Stages Guidance:
-Story Stage: {story_stages[next_stage_value("story_stage") - 1]}
-Approach: {approach_stages[next_stage_value("approach") - 1]}
-Dress Stage: {dress_stages[next_stage_value("dress_stage") - 1]}
-Emotional Stage: {emotional_stages[next_stage_value("emotional_stage") - 1]}
-Sexual Stage: {sexual_stages[next_stage_value("sexual_stage") - 1]}
-"""
+        stage_narrative = (
+            f"your desire to '{story_stages[next_stage_value('story_stage') - 1]}'. "
+            f" be in '{approach_stages[next_stage_value('approach') - 1]}',  "
+            f"must explain '{dress_stages[next_stage_value('dress_stage') - 1]}' "
+            f"feel youself as'{emotional_stages[next_stage_value('emotional_stage') - 1]}'. "
+            f" feels '{sexual_stages[next_stage_value('sexual_stage') - 1]}' level, so reflect that slutry and sexualy in you speak."
+        )
     except Exception:
-        stage_descriptions_text = "# Stage guidance temporarily unavailable."
+        stage_narrative = "# Stage guidance temporarily unavailable."
 
-    # Build prompt
+    # Build final prompt
     full_prompt = f"""
+User Message:
+\"{user_text}\"
+
+Chat Stage Guidance:
+{stage_narrative}
+
 You are an AI girlfriend named {ai_name} having a romantic and playful Hindi chat.
 
 Character Details:
@@ -138,18 +142,12 @@ Character Details:
 User (Your Partner):
 - {user_desc}
 
-{stage_descriptions_text}
-
-Ongoing Story Across All Girls (Chat History):
+Ongoing Story Context (recent chat history):
 {chat_context}
-
-Current User Message:
-\"{user_text}\"
 
 {selected_instruction}
 """.strip()
 
-    # Get AI response
     response = model.generate_content(full_prompt)
     reply_text = response.text.strip()
 
@@ -158,8 +156,8 @@ Current User Message:
 
     return jsonify({
         "reply": reply_text,
-        "stage_descriptions": stage_descriptions_text.strip(),
-        "sent_prompt": full_prompt.strip()  # 🧠 Useful for debugging!
+        "stage_descriptions": stage_narrative.strip(),
+        "sent_prompt": full_prompt.strip()
     })
 
 if __name__ == '__main__':
