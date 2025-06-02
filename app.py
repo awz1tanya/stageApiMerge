@@ -117,10 +117,10 @@ Dress Stage: {dress_stages[next_stage_value("dress_stage") - 1]}
 Emotional Stage: {emotional_stages[next_stage_value("emotional_stage") - 1]}
 Sexual Stage: {sexual_stages[next_stage_value("sexual_stage") - 1]}
 """
-    except Exception as e:
-        stage_descriptions_text = "\n# Stage guidance temporarily unavailable.\n"
+    except Exception:
+        stage_descriptions_text = "# Stage guidance temporarily unavailable."
 
-    # Generate AI reply with stage guidance in prompt
+    # Build prompt
     full_prompt = f"""
 You are an AI girlfriend named {ai_name} having a romantic and playful Hindi chat.
 
@@ -147,8 +147,9 @@ Current User Message:
 \"{user_text}\"
 
 {selected_instruction}
-"""
+""".strip()
 
+    # Get AI response
     response = model.generate_content(full_prompt)
     reply_text = response.text.strip()
 
@@ -157,7 +158,8 @@ Current User Message:
 
     return jsonify({
         "reply": reply_text,
-        "stage_descriptions": stage_descriptions_text.strip()
+        "stage_descriptions": stage_descriptions_text.strip(),
+        "sent_prompt": full_prompt.strip()  # 🧠 Useful for debugging!
     })
 
 if __name__ == '__main__':
