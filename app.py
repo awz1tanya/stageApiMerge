@@ -32,7 +32,7 @@ approach_stages = [
     "Intimate Vulnerability", "rape ing", "restart next sex talk"
 ]
 dress_stages = [
-    "full dress", "explain your 10 dress parts", "removing upper layers", "naked", "long skirt and blouse",
+    "full dress", "explain your dress parts", "removing upper layers", "naked", "long skirt and blouse",
     "long skirt and blouse", "silk loose nighty", "naked", "covered with white sperm", "sperm on face"
 ]
 emotional_stages = [
@@ -109,9 +109,9 @@ def chat():
             return min(stage_data.get(stage, 1) + 1, 10)
 
         stage_narrative = (
-            f"your desire to '{story_stages[next_stage_value('story_stage') - 1]}'. "
+            f"your desire must to perfom this '{story_stages[next_stage_value('story_stage') - 1]}'. "
             f" be in '{approach_stages[next_stage_value('approach') - 1]}',  "
-            f"must explain '{dress_stages[next_stage_value('dress_stage') - 1]}' "
+            f"explain '{dress_stages[next_stage_value('dress_stage') - 1]}' "
             f"feel youself as'{emotional_stages[next_stage_value('emotional_stage') - 1]}'. "
             f" feels '{sexual_stages[next_stage_value('sexual_stage') - 1]}' level, so reflect that slutry and sexualy in you speak."
         )
