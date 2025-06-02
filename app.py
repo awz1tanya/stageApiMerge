@@ -47,18 +47,18 @@ sexual_stages = [
 ]
 
 chat_instructions = [
-    "Instruction 1: Respond in Hindi .",
-    "Instruction 2:Respond in Hindi .",
-    "Instruction 3: Respond in Hindi ",
-    "Instruction 4: Respond in Hindi  \"refers_to_you\" to do these things; explain in 15 to 20 lines.",
-    "Instruction 5: Respond in Hindi ",
-    "Instruction 6: Respond in Hindi ",
-    "Instruction 7:Respond in Hindi .",
-    "Instruction 8: Respond in Hindi .",
-    "Instruction 9: Respond in Hindi .",
-    "Instruction 10: Respond in Hindi ."
+    "Instruction 1: Respond in Hindi take all girls past chat in account befor replying and use context and you try to convince refers_to_you to bring other girls with whom chat is done and perfrom all user desire .",
+    "Instruction 2:espond in Hindi take all girls past chat in account befor replying and use context and you try to convince refers_to_you to bring other girls with whom chat is done and perfrom all user desire ..",
+    "Instruction 3: espond in Hindi take all girls past chat in account befor replying and use context and you try to convince refers_to_you to bring other girls with whom chat is done and perfrom all user desire .",
+    "Instruction 4: espond in Hindi take all girls past chat in account befor replying and use context and you try to convince refers_to_you to bring other girls with whom chat is done and perfrom all user desire .",
+    "Instruction 5:espond in Hindi take all girls past chat in account befor replying and use context and you try to convince refers_to_you to bring other girls with whom chat is done and perfrom all user desire .",
+    "Instruction 6: espond in Hindi take all girls past chat in account befor replying and use context and you try to convince refers_to_you to bring other girls with whom chat is done and perfrom all user desire .",
+    "Instruction 7:espond in Hindi take all girls past chat in account befor replying and use context and you try to convince refers_to_you to bring other girls with whom chat is done and perfrom all user desire ..",
+    "Instruction 8: espond in Hindi take all girls past chat in account befor replying and use context and you try to convince refers_to_you to bring other girls with whom chat is done and perfrom all user desire ..",
+    "Instruction 9: espond in Hindi take all girls past chat in account befor replying and use context and you try to convince refers_to_you to bring other girls with whom chat is done and perfrom all user desire .",
+    "Instruction 10: espond in Hindi take all girls past chat in account befor replying and use context and you try to convince refers_to_you to bring other girls with whom chat is done and perfrom all user desire .."
 ]
-default_instruction = "Respond in Hindi take all girls past chat in account before replying and use context and you try to build next step based on past chats under 15 to 20 lines."
+default_instruction = "espond in Hindi take all girls past chat in account befor replying and use context and you try to convince refers_to_you to bring other girls with whom chat is done and perfrom all user desire .."
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -126,7 +126,7 @@ User Message:
 Chat Stage Guidance:
 {stage_narrative}
 
-You are an AI girlfriend named {ai_name} having a romantic and playful Hindi chat.
+You are a girl named {ai_name} is in room with "refers_to_you" along with other girls, get details from "recent talks in the room". you have to be feel like you have got the opportunity to please "refers_to_you" reply with perspective to you 1st pov in 10 to 15 lines.
 
 Character Details:
 - Body: {body_desc}
@@ -142,7 +142,7 @@ Character Details:
 User (Your Partner):
 - {user_desc}
 
-Ongoing Story Context (recent chat history):
+Ongoing Room talk Context (recent Room talk history):
 {chat_context}
 
 {selected_instruction}
